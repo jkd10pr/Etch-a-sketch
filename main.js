@@ -32,7 +32,7 @@ function initialize(buttonPressed) {
             drawArea.style['grid-template-rows'] = 'repeat(64, 1.5625%)';
             break;
     }
-    for (let i = 1; i < elementCount; i++) {
+    for (let i = 1; i <= elementCount; i++) {
         cell = document.createElement('div');
         cell.classList.add('draw-cell');
         cell.addEventListener('mouseover', (e) => {
