@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <h1> Etch-a-sketch! </h1>
     <div id="buttons-wrapper">
         <label id="rainbow-label" for='rainbox-style-checkbox'>Rainbow Style</label>
         <input id='rainbox-style-checkbox' type="checkbox" unchecked>
-        
-    <button id="button16" class='grid-size-button'>16x16</button> 
-    <button id="button32" class='grid-size-button'>32x32</button>
-    <button id="button64" class='grid-size-button'>64x64</button>
+        <button id="button16" class='grid-size-button'>16x16</button>
+        <button id="button32" class='grid-size-button'>32x32</button>
+        <button id="button64" class='grid-size-button'>64x64</button>
+        <input type="color" id="color-picker" name="pick-color" value="#ffffff">
     </div>
     <div id="drawing-area"></div>
 </body>
 <script src="main.js"></script>
+
 </html>

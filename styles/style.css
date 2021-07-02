@@ -61,9 +61,9 @@ button{
 }
 
 #rainbow-label{
-    font-size: 12px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 1000;
     align-self: center;
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
     background-clip: text;
