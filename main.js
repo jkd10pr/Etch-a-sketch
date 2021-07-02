@@ -1,6 +1,7 @@
 drawArea = document.querySelector('#drawing-area');
 buttons = document.querySelectorAll('.grid-size-button');
 let hueColor=0;
+document.getElementById("rainbox-style-checkbox").checked = false;
 
 for (i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', (e)=>{
@@ -35,7 +36,7 @@ function initialize(buttonPressed) {
         cell.classList.add('draw-cell');
         cell.addEventListener('mouseover',(e)=>{
             if(document.getElementById("rainbox-style-checkbox").checked === true){
-                hueColor=(hueColor+10)%360;
+                hueColor=(hueColor+5)%360;
                 e.target.style['background-color']=`hsl(${hueColor},100%,50%)`;
             } else {
                 e.target.style['background-color']=`white`;
@@ -44,3 +45,5 @@ function initialize(buttonPressed) {
         drawArea.appendChild(cell);
     }
 }
+
+initialize('button16');

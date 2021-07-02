@@ -1,6 +1,9 @@
-html, body{
-    height: 100vh;
+html{
     background: radial-gradient(#000892, #000138);
+    margin: 0px 0px;
+}
+
+body{
     margin: 0px 0px;
 }
 
